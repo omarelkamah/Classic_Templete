@@ -1,0 +1,373 @@
+/* Start Global Style  */
+* {box-sizing: border-box;}
+body {font-family: Arial, Helvetica, sans-serif}
+/* End Global Style  */
+
+/* Start Navigation Bar */
+nav {
+    height: 0;
+    position: relative;
+    z-index: 2;
+    color: #fff
+}
+
+nav .brand {
+    width: 40%;
+    float: left;
+    height: 0;
+}
+
+nav ul {
+    width: 50%;
+    float: left;
+    height: 0;
+    margin: 15px 0 0 54%
+}
+
+nav ul li {
+    margin-right: 30px;
+    display: inline-block;
+    padding: 10px 0px;
+    cursor: pointer;
+    transition: all .2s ease-in-out
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none
+}
+
+nav ul li.active a,
+nav ul li a:hover {color: #1abc9c}
+
+nav ul li.active,
+nav ul li:hover {border-bottom: 2px solid #1abc9c}
+/* End Navigation Bar */
+
+
+/* Start Header  */
+header {
+    background-image: url("../img/header.jpg");
+    background-size: cover;
+    position: relative
+}
+
+header h2 {font-weight: bold;}
+
+header .overlay {
+    background-color: rgba(0, 0, 0, .7);
+    top: 0;
+    z-index: 0;
+    height: 100%;
+}
+
+/* Start Style For the Slider */
+header .bx-wrapper {
+    box-shadow: none;
+    border: none;
+    background: none;
+    height: 100%;
+    margin: 0;
+    position: static;
+    text-align: center;
+    color: #fff
+}
+header .bx-viewport {height: 100% !important}
+header .bx-viewport ul li h2 {font-size: 50px; margin: 0}
+header .bx-viewport ul li span {color: #1abc9c}
+header .bx-viewport ul li p {font-size: 17px}
+/* End Style For the Slider */
+/* End Header  */
+
+/* Start servises */
+.servises {padding: 50px 0 35px 0}
+
+.servises h2 {
+    margin: 0 0 50px 0;
+    color: #2d2d2d
+}
+
+.servises .item {
+    float: left;
+    margin-bottom: 20px;
+}
+
+.servises .item  i {
+    width: 18%;
+    float: left;
+    color: #1abc9c;
+    margin: 20px 6% 0 0
+}
+
+.servises .item .info {
+    width: 75%;
+    float: left;
+}
+
+.servises .item .info h3 {
+    margin-bottom: 10px;
+    color: #2d2d2d;
+    letter-spacing: 1px;
+}
+
+.servises .item .info p {
+    color: #9c9c9c;
+    margin-top: 5px;
+    line-height: 1.7;
+    font-size: 14px;
+}
+/* End Servises */
+
+/* Start Our Team */
+.our-team {position: relative; padding: 50px 0}
+
+.our-team .box {float: left}
+
+.our-team .box:first-child h2 {
+    color: #2d2d2d;
+    margin: 0 0 25px 0
+}
+
+.our-team .box:first-child p {
+    color: #9c9c9c;
+    margin: 0;
+    line-height: 1.5;
+    font-size: 15px;
+}
+
+.our-team .box:not(:first-child) {
+    position: relative;
+    border-radius: 10px;
+}
+
+
+.our-team .box:not(:first-child) img {width: 100%; height: 100%; border-radius: 10px;}
+
+.our-team .box:not(:first-child) .overlay {
+    height: 99%;
+    background-color: rgba(26, 188, 156, .7);
+    color: #fff;
+    display: none;
+    border-radius: 10px;
+}
+
+.our-team .box:not(:first-child) .overlay h2 {
+    margin: 0;
+    text-align: center;
+    line-height: 167px;
+}
+/* End Our Team */
+/* End servises */
+
+
+/* Start Testimonials */
+.testimonials {
+    background-image: url("../img/testimonials.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin-top: 30px;
+}
+
+.testimonials .tes-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .7);
+    width: 100%;
+    height: 100%
+}
+.testimonials h2 {
+    text-align: center;
+    color: #fff;
+    margin-top: 50px;
+    font-size: 28px;
+    font-family: tahoma;
+    letter-spacing: 2px;
+}
+
+.testimonials .testi-slider q {
+    display: block;
+    width: 70%;
+    color: #c1adad;
+    line-height: 2;
+    text-align: center;
+    margin: 30px auto 0 auto
+}
+
+.testimonials .testi-slider p {
+    display: block;
+    text-align: center;
+    color: #1abc9c;
+    margin-top: 35px;
+    font-size: 18px;
+}
+
+.testimonials .testi-slider {display: none;}
+.testimonials .testi-slider.active {display: block;}
+/* End Testimonials */
+
+
+/* Start Protofolio */
+.protofolio {padding: 50px 0}
+
+.protofolio h2 {
+    font-size: 27px;
+    margin: 0;
+    padding-bottom: 30px;
+}
+
+.protofolio ul li {
+    display: inline-block;
+    padding: 10px 15px;
+    border: 2px solid#9c9c9c;
+    color: #9c9c9c;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-size: 17px;
+    cursor: pointer;
+    transition: all .3s ease-in-out
+}
+
+.protofolio ul li.selected,
+.protofolio ul li:hover {
+    background-color: #9c9c9c;
+    color: #fff
+}
+
+.protofolio .container-img {
+    overflow: hidden;
+    margin: 60px 0;
+}
+
+.protofolio .container-img > div {
+    float: left;
+    margin-bottom: 2%;
+    position: relative;
+}
+
+.protofolio .container-img > div img {
+    width: 100%
+}
+
+.protofolio .container-img > div .overlay {
+    height: 99%;
+    background-color: rgba(26, 188, 156, .7);
+    color: #fff;
+    display: none;
+}
+
+.protofolio .container-img > div .overlay span {position: relative}
+
+
+.protofolio .container-img > div .overlay span:first-child {
+    position: absolute;
+    bottom: 38%;
+    left: 32%;
+    border: 2px solid #fff;
+    width: 131px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.protofolio .container-img > div .overlay span:last-child {
+    position: absolute;
+    bottom: 15px;
+    right: 20px;
+}
+
+/* End Protofolio */
+
+/* Start Footer */
+footer {
+    background-color: #232323;
+    color: #9c9c9c;
+    padding: 50px 0;
+}
+footer .box-footer {float: left}
+
+footer .box-footer:nth-child(2),
+footer .box-footer:nth-child(3) {margin: 0 2%}
+
+footer .box-footer h2 {color: rgb(223, 223, 223)}
+
+footer .box-footer p {
+    line-height: 1.7; margin: 24px 0 0}
+
+footer .box-footer ul.one {margin-top: 40px}
+
+footer .box-footer ul.one li,
+footer .box-footer.tags span {
+    border: 1px solid #9c9c9c;
+    display: inline-block;
+    font-size: 22px;
+    border-radius: 3px;
+    margin-right: 10px;
+}
+
+footer .box-footer ul.one li {padding: 10px 20px}
+
+footer .box-footer.tags span {padding: 10px 7px; margin-bottom: 15px}
+
+footer .box-footer > div {overflow: hidden; margin-bottom: 15px}
+
+footer .box-footer > div img{float: left; margin-right: 10px}
+
+footer .box-footer > div h3 {
+    margin: 7px 0;
+    font-size: 15px;
+    color: #ccc;
+}
+
+footer .box-footer ul.three li {
+    display: block;
+    padding: 15px 0;
+    border-bottom: 1px solid #ccc;
+    margin-top: 9px;
+}
+/* End Footer */
+
+
+/* Start My FremWork */
+.clearfex {clear: both}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+h2, h3, h4 {font-weight: normal; text-transform: capitalize;}
+
+.capital {text-transform: capitalize}
+
+.header-shep {position: relative}
+.header-shep:after {
+    content: "";
+    position: absolute;
+    top: 32px;
+    left: -1px;
+    width: 33px;
+    display: block;
+    border-bottom: 2px solid #2d2d2d;
+}
+
+hr {
+    display: block;
+    border: 1px solid #ddd;
+    margin-bottom: 40px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+}
+/* End My FremWork */
+
